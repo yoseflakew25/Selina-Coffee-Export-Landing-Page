@@ -1,5 +1,5 @@
 /* =============================================================
-   QEMAME TRADING PLC - interactions
+   Selina Coffee Exporters - interactions
    ============================================================= */
 (function () {
   'use strict';
@@ -20,7 +20,7 @@
       name: 'Yirgacheffe', am: 'ይርጋጨፌ', zone: 'Gedeo Zone, southern Ethiopia',
       alt: '1,900 to 2,200 m', top: '2,200', harvest: 'November to January', process: 'Washed and natural',
       varieties: 'Local heirloom (Kurume, Dega, Wolisho)', avail: 'washed and natural',
-      story: 'The name every filter drinker already knows. Cool nights on the Gedeo escarpment slow the cherry down until the sugars are dense, and the washed lots come out of the cup like tea with flowers in it. If a buyer has only ever had one Ethiopian coffee, it was probably this one.',
+      story: 'The name every filter drinker already knows. Cool nights on the Gedeo escarpment slow the cherry down until the sugars are dense. We source washed lots through our Jimma processing hub, where our solar powered wet mill preserves the floral clarity that makes Yirgacheffe famous.',
       notes: ['jasmine', 'bergamot', 'lemon blossom', 'white peach', 'black tea'],
       bars: { Floral: 95, Citrus: 88, Berry: 42, Body: 48, Sweetness: 78, Acidity: 90 }
     },
@@ -28,7 +28,7 @@
       name: 'Sidama', am: 'ሲዳማ', zone: 'Sidama Region, southern Ethiopia',
       alt: '1,800 to 2,200 m', top: '2,200', harvest: 'November to January', process: 'Washed and natural',
       varieties: 'Heirloom, Kurume dominant', avail: 'washed and natural',
-      story: 'Sidama is dense with very small farms, often less than half a hectare, and cherry arrives at the station carried by hand. Washed Sidama is the workhorse of a good filter programme: bright, structured and repeatable across a season, which is exactly what a roaster with a menu to fill needs.',
+      story: 'Sidama is dense with very small farms, often less than half a hectare, and cherry arrives at the station carried by hand. We work with community smallholders through the Oromo Geda system, ensuring every lot is traceable and sustainably processed at our Low-Carbon wet mill.',
       notes: ['lemon zest', 'black tea', 'brown sugar', 'apricot', 'clean finish'],
       bars: { Floral: 74, Citrus: 86, Berry: 55, Body: 58, Sweetness: 80, Acidity: 86 }
     },
@@ -36,7 +36,7 @@
       name: 'Guji', am: 'ጉጂ', zone: 'Guji Zone, Oromia',
       alt: '1,950 to 2,350 m', top: '2,350', harvest: 'November to February', process: 'Natural and washed',
       varieties: 'Heirloom landrace and JARC selections', avail: 'natural and washed',
-      story: 'Guji sat inside the Sidama name until buyers tasted it on its own and refused to give it back. Some of the highest coffee in the country grows here, and a natural dried slowly at that altitude tastes like somebody put fruit in the cup on purpose. This is the origin competition buyers ask for by name.',
+      story: 'Guji sat inside the Sidama name until buyers tasted it on its own and refused to give it back. Some of the highest coffee in the country grows here. We process Guji naturals using our biogas hybrid system, converting coffee pulp into agricultural compost for a fully circular model.',
       notes: ['strawberry', 'mango', 'rose water', 'raspberry', 'syrupy body'],
       bars: { Floral: 82, Citrus: 60, Berry: 96, Body: 80, Sweetness: 92, Acidity: 78 }
     },
@@ -44,20 +44,20 @@
       name: 'Geisha', am: 'ጌሻ', zone: 'Bench Maji and Kaffa, south west Ethiopia',
       alt: '1,600 to 2,100 m', top: '2,100', harvest: 'November to January', process: 'Natural and washed',
       varieties: 'Forest landrace, the original Geisha among them', avail: 'natural and washed',
-      story: 'The variety the world pays the most for was collected from these forests in the 1930s, long before it ever reached Panama. Coffee still grows here under a canopy nobody planted, and the genetic diversity on one hillside outruns whole producing countries. This is the origin we are proudest to source from.',
+      story: 'The variety the world pays the most for was collected from these forests in the 1930s, long before it ever reached Panama. Coffee still grows wild here under a canopy nobody planted. Selina Coffee Exporters supports the Low-Carbon Coffee Transition Initiative to protect these forests while delivering world-class lots to roasters.',
       notes: ['jasmine', 'bergamot', 'tropical fruit', 'sweet spice', 'tea like'],
       bars: { Floral: 96, Citrus: 84, Berry: 62, Body: 52, Sweetness: 82, Acidity: 88 }
     },
     limmu: {
-      name: 'Limmu', am: 'ሊሙ', zone: 'Limmu, Jimma Zone, Oromia',
-      alt: '1,400 to 2,000 m', top: '2,000', harvest: 'November to January', process: 'Washed',
-      varieties: 'Heirloom with JARC selections', avail: 'washed, natural on request',
-      story: 'Limmu is the diplomat of Ethiopian coffee: balanced, soft, winey, never shouting. It is what we suggest to roasters whose customers found Yirgacheffe too loud, and it holds its fruit in milk, which makes it a quietly useful espresso component.',
+      name: 'Jimma', am: 'ጅማ', zone: 'Jimma Zone, south west Ethiopia',
+      alt: '1,400 to 2,000 m', top: '2,000', harvest: 'November to January', process: 'Washed and natural',
+      varieties: 'Heirloom with JARC selections', avail: 'washed and natural',
+      story: 'Jimma is the heart of Selina Coffee Exporters. Our Low-Carbon wet mill, powered by solar and biogas hybrid energy, processes harvests from community smallholder farmers partnered through the traditional Oromo Geda system. This is where our sustainable sourcing story begins.',
       notes: ['apricot', 'soft citrus', 'honey', 'almond', 'winey finish'],
       bars: { Floral: 62, Citrus: 70, Berry: 58, Body: 66, Sweetness: 82, Acidity: 68 }
     }
   };
-  var REGION_ORDER = ['yirgacheffe', 'sidama', 'guji', 'geisha', 'limmu'];
+  var REGION_ORDER = ['limmu', 'yirgacheffe', 'sidama', 'guji', 'geisha'];
 
   var PROCESS = {
     washed: { label: 'Washed', hint: 'Wet processed and soaked. One of our two standard exports, and the classic clean, tea like Ethiopian profile.', short: 'Fully washed, so you taste the terroir and nothing the process added.',
@@ -309,7 +309,7 @@
       alt: $('#lcAlt'), harvest: $('#lcHarvest'), process: $('#lcProcess'), varieties: $('#lcVar'),
       notes: $('#lcNotes'), bars: $('#lcBars'), lot: $('#lcLot'), ask: $('#lcAsk')
     };
-    var active = 'yirgacheffe';
+    var active = 'limmu';
     setRegion = function (key, scrollCard) {
       var r = REGIONS[key]; if (!r) return;
       active = key;
@@ -356,7 +356,7 @@
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setRegion(key, true); }
       });
     });
-    setRegion('yirgacheffe', false);
+    setRegion('limmu', false);
     if (fields.ask) fields.ask.addEventListener('click', function () {
       prefill('We are interested in ' + REGIONS[active].name + ' (' + REGIONS[active].avail + ').');
     });
@@ -383,7 +383,7 @@
       elBrew = $('#cupBrew'), elProcHint = $('#procHint'), elGradeHint = $('#gradeHint'),
       elGradeLabel = $('#cupGradeLabel'), elRoastHint = $('#roastHint'),
       liquid = $('#brewLiquid'), crema = $('#brewCrema'), stream = $('#brewStream'), steam = $('#cupSteam');
-    var state = { region: 'yirgacheffe', process: 'washed', grade: 'specialty', roast: 1 };
+    var state = { region: 'limmu', process: 'washed', grade: 'specialty', roast: 1 };
 
     REGION_ORDER.forEach(function (k) {
       var b = document.createElement('button');
@@ -612,7 +612,7 @@
         '\nCountry: ' + (data.get('country') || '-') + '\nVolume: ' + data.get('volume') +
         '\nGrade: ' + data.get('grade') + '\nSamples: ' + (data.get('samples') ? 'yes' : 'no') +
         '\n\n' + data.get('message');
-      if (mail) mail.href = 'mailto:qemame009@gmail.com?subject=' +
+      if (mail) mail.href = 'mailto:selinacoffeeexport@gmail.com?subject=' +
         encodeURIComponent('Coffee enquiry from ' + data.get('name')) + '&body=' + encodeURIComponent(body);
       if (doneMsg) doneMsg.textContent = 'Thank you, ' + String(data.get('name')).split(' ')[0] +
         '. We have your request and will come back to you from Addis Ababa with options, samples and pricing.';
